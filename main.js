@@ -84,36 +84,62 @@ console.log("Array completo:")
 console.log(frutas)
 
 console.log("Elementos por separado:")
-frutas.forEach((fruta, index) => {
-  console.log(`Fruta #${index + 1}: ${fruta}`)
+
+frutas.forEach(function(fruta, indice) {
+  console.log("Fruta #" + (indice + 1) + ": " + fruta)
 }) */
 
 
-/* // Punto 14
-let numeros = [5, 10, 15, 20, 25]
 
+// Punto 14
+/* let numeros = [10, 20, 30, 40, 50]
+
+console.log("Array completo:")
 console.log(numeros)
-for (let i = 0; i < numeros.length; i++) {
-  console.log(`Número #${i + 1}: ${numeros[i]}`)
-} */
 
-// Punto 15: Crear un array de objetos (familia)
+console.log("Elementos por separado:")
+
+numeros.forEach(function(numero, indice) {
+  console.log("Número #" + (indice + 1) + ": " + numero)
+}) */
+
+// Punto 15
 /* let familia = [
   { nombre: "Padre", edad: 40 },
-  { nombre: "Madre", edad: 35 },
-  { nombre: "Hijo", edad: 10 },
-  { nombre: "Hija", edad: 8 },
-  { nombre: "Abuelo", edad: 70 }
-]
+  { nombre: "Madre", edad: 38 },
+  { nombre: "Hijo Mayor", edad: 15 },
+  { nombre: "Hija Mayor", edad: 13 },
+  { nombre: "Hijo Menor", edad: 8 }
+];
 
-console.log(familia);
-for (let i = 0; i < familia.length; i++) {
-  console.log(`Miembro de la familia: ${familia[i].nombre}, Edad: ${familia[i].edad}`)
-} */
+console.log("Array completo:")
+console.log(familia)
 
-/* // Punto 16
-let textoAleatorio = `Me gusta comer ${frutas[1]} mientras sumo ${numeros[3]} y converso con ${familia[4].nombre}
- */
+console.log("Elementos por separado:")
+
+familia.forEach(function(persona, indice) {
+  console.log("Persona #" + (indice + 1) + ": Nombre:" + (persona.nombre) + ", Edad:" + (persona.edad))
+}) */
+
+// Punto 16
+/* let frutas = ["Manzana", "Banana", "Naranja", "Uva", "Pera"];
+let numeros = [10, 20, 30, 40, 50];
+let familia = [
+  { nombre: "Padre", edad: 40 },
+  { nombre: "Madre", edad: 38 },
+  { nombre: "Hijo Mayor", edad: 15 },
+  { nombre: "Hija Mayor", edad: 13 },
+  { nombre: "Hijo Menor", edad: 8 }
+];
+
+let segundoElemento = frutas[1];
+let cuartoElemento = numeros[3];
+let quintoObjeto = familia[4];
+
+let textoAleatorio = "Hoy comí " + (segundoElemento)+ " con " + (cuartoElemento) + " amigos, incluyendo a " +(quintoObjeto.nombre);
+
+console.log(textoAleatorio); */
+
 /* // Punto 17
 let edadUsuario = parseInt(prompt("Ingresa tu edad"))
 let edadCompanero = parseInt(prompt("Ingresa la edad de tu compañero"))
